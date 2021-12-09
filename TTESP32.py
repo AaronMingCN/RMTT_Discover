@@ -130,7 +130,7 @@ class TTESP32(object):
         protocol.sendTelloCtrlMsg("ccw " + str(Angle))
 
     # 飞到场地的坐标位置
-    def GoToMapPosition(self, X, Y, Z=TTHegtht, Speed=TTSpeed, Map="m-1"):
+    def GoToMapPosition(self, X, Y, Z=TTHight, Speed=TTSpeed, Map="m-1"):
         protocol.sendTelloCtrlMsg(
             "go "
             + str(int(X))
