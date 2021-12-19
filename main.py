@@ -29,9 +29,9 @@ def main():
     ADiscover = TTDiscover(AMap, ATT)
     ATT.Init()
     ATT.TakeOff()
-    # ATT.TakeOffWaitMap()
-    # ADiscover.DiscoverToEnd(ADiscover.BeginNode)
-    # ADiscover.BackToBegin()
+    # ATT.TakeOffWaitMap() #起飞并等待识别到地图
+    # ADiscover.DiscoverToEnd(ADiscover.BeginNode) #一直探索到重点
+    # ADiscover.BackToBegin() #返回出发点
     ATT.TurnLeft()
     ATT.TurnLeft()
     ATT.TurnLeft()
